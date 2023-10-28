@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELE</title>
+    <link rel="stylesheet" href="./css/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<style>
+    @-webkit-keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+</style>
+
+<body>
+
+    <div class="wrapper">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-3 col-4 col-cus-20">
+                    <div class="blue_strap">
+                        <div class="profile_box">
+                            <div class="profile-pic">
+                                <img src="./images/profile-pic.png" alt="" id="imageProf" accept="image/*">
+                                <div class="p-image" id="uploadProf">
+                                    <i class="fa fa-camera upload-button"></i>
+                                    <input class="file-upload" type="file" id="chooseProf" accept="image/*">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-9 col-lg-9 col-md-8 col-sm-9 col-8 col-cus-80">
+                    <header>
+                        <div class="logo-blk">
+                            <div class="img">
+                                <img src="./images/logo_ele.png" alt="">
+                            </div>
+                        </div>
+                    </header>
+                    <section class="cont-sec">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="title_wrap">
+                                    <h1 class="editableText">
+                                        <span class="titext">Happy Client</span>
+                                        <span class="edit_icon"><i class="fas fa-pencil-alt"></i></span>
+                                        <div class="invalid-feedback" style="display: none;"><i class="fas fa-exclamation-circle"></i> required</div>
+                                    </h1>
+                                    <h2 class="editableText">
+                                        <span class="titext">Testimonials</span>
+                                        <span class="edit_icon"><i class="fas fa-pencil-alt"></i></span>
+                                        <div class="invalid-feedback" style="display: none;"><i class="fas fa-exclamation-circle"></i> required</div>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-md-5 mb-4">
+                            <div class="col-md-12">
+                                <div class="description_wrap">
+                                    <div class="qute-icn-l">
+                                        <img src="./images/top-quote.png" alt="">
+                                    </div>
+                                    <div class="feedtext">
+                                        <p class="editableFeedback">Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Rerum dicta pariatur similique voluptatum quae voluptatem molestias
+                                            illum molestiae, cupiditate aliquam nihil nobis hic minus velit ea, cumque
+                                            porro laborum eligendi iusto accusamus officiis? Officia cumque autem a
+                                            similique ea quisquam numquam aperiam quasi esse! Earum veniam assumenda
+                                            accusantium quis dolorem!</p>
+                                        <span class="edit_icon2" title="Write your comments here"><i class="fas fa-pencil-alt"></i></span>
+                                        <div class="invalid-feedback" style="display: none;"><i class="fas fa-exclamation-circle"></i> required</div>
+                                    </div>
+                                    <div class="qute-icn-r">
+                                        <img src="./images/bottom_quote.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="user_info">
+                                    <h3 class="editableText">
+                                        <span class="titext">Rahul Kumar</span>
+                                        <span class="edit_icon"><i class="fas fa-pencil-alt"></i></span>
+                                        <div class="invalid-feedback" style="display: none;"><i class="fas fa-exclamation-circle"></i> required</div>
+                                    </h3>
+                                    <div class="editableText desig" style="display: block;">
+                                        <span class="titext">Aiims Hospital Manager</span>
+                                        <span class="edit_icon"><i class="fas fa-pencil-alt"></i></span>
+                                        <div class="invalid-feedback" style="display: none;"><i class="fas fa-exclamation-circle"></i> required</div>
+                                    </div>
+                                    <ul class="star-icon" id="starIcon">
+                                        <li><button class="fas fa-star"></button></li>
+                                        <li><button class="fas fa-star"></button></li>
+                                        <li><button class="fas fa-star"></button></li>
+                                        <li><button class="fas fa-star"></button></li>
+                                        <li><button class="fas fa-star"></button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="sign_upload">
+                                    <img src="" id="imageSig" alt="" style="display: none;" accept="image/*">
+                                    <div class="p-image" id="uploadSig">
+                                        <i class="fas fa-upload me-2"></i> upload signature
+                                        <input class="file-upload" type="file" id="chooseSig" accept="image/*">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="prev-btn-wrap">
+        <!-- Button trigger modal -->
+        <button type="button" class="prev-button" id="prevButton" data-bs-target="#exampleModal">
+            <i class="far fa-eye"></i> Preview
+        </button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row h-100">
+                        <div class="col-md-3 col-sm-3 col-3">
+                            <div class="blue_strap">
+                                <div class="profile_box">
+                                    <div class="profile-pic">
+                                        <img src="./images/profile-pic.png" alt="" id="imageProf">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-sm-9 col-9">
+                            <header>
+                                <div class="logo-blk">
+                                    <div class="img">
+                                        <img src="./images/logo_ele.png" alt="">
+                                    </div>
+                                </div>
+                            </header>
+                            <section class="comment-warpper">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="title_wrap">
+                                            <h1>
+                                                <span class="titext">Happy Client</span>
+                                            </h1>
+                                            <h2>
+                                                <span class="titext">Testimonials</span>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-md-12">
+                                        <div class="description_wrap">
+                                            <div class="qute-icn-l">
+                                                <img src="./images/top-quote.png" alt="">
+                                            </div>
+                                            <div class="feedtext">
+                                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis,
+                                                    aliquam non reprehenderit at doloremque ipsum! Soluta nostrum
+                                                    laboriosam, quam consectetur natus, quis aperiam voluptatibus esse
+                                                    sunt blanditiis nulla pariatur, illum suscipit excepturi eligendi
+                                                    temporibus sint. Beatae impedit recusandae adipisci accusamus.</p>
+                                            </div>
+                                            <div class="qute-icn-r">
+                                                <img src="./images/bottom_quote.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="user_info">
+                                            <h3>
+                                                <span class="titext">Rahul Kumar</span>
+                                            </h3>
+                                            <div class="desig" style="display: block;">
+                                                <span class="titext">Aiims Hospital Manager</span>
+                                            </div>
+                                            <ul class="star-icon-p">
+                                                <li><button class="fas fa-star"></button></li>
+                                                <li><button class="fas fa-star"></button></li>
+                                                <li><button class="fas fa-star"></button></li>
+                                                <li><button class="fas fa-star"></button></li>
+                                                <li><button class="fas fa-star"></button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="sign_upload">
+                                            <img src="./images/signature.png" id="imageSig" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="close-button" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="save-button">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="alert alert-danger" id="dangerAlert" role="alert" style="display: none; -webkit-animation: fadeIn 0.3s; animation: fadeIn 0.3s;">
+        <div class="alert-card">
+            <div class="alert-header mb-3">
+                <strong>
+                    <!-- <i class="fas fa-exclamation-triangle"></i> -->
+                    Oops!
+                </strong>
+            </div>
+            <div class="alert-body mb-3">
+                <ul id="error">
+
+                </ul>
+            </div>
+            <div class="alert-footer">
+                <button type="button" class="btn-close" id="alertClose">OK</button>
+            </div>
+        </div>
+    </div>
+    <div class="alert-backdrop" id="alertShadow" style="display: none; -webkit-animation: fadeIn 0.3s; animation: fadeIn 0.3s;"></div>
+
+
+    <script src="./js/jquery3.7.0.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

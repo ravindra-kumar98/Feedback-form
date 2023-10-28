@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    <link rel="icon" type="image/ico" sizes="32x32" href="./images/favicon/favicon.ico">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="./css/dashboard.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="body-overlay" id="ovl-hd-sw" style="display: none;"></div>
+
+        <!-- Navbar -->
+        <nav class="main__nav navbar navbar-expand-xl custom-expand" id="hr-nav">
+            <div class="container-fluid">
+                <div class="logo_wrap">
+                    <a href="#!" class="brand-link" id="logoIcon">
+                        <img src="./images/logo_ele.png" alt="" class="brand-image elevation-3">
+                    </a>
+                    <button class="bar-icon" type="button" id="collapseButton" title="Application Management">
+                        <span class="bars"></span>
+                    </button>
+                </div>
+                <!-- Right navbar links -->
+                <ul class="navbar-nav profile_nav flex-row">
+                    <li class="nav-item notification_item">
+                        <div class="dropdown">
+                            <button class="btn notification__btn me-1" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="notification__bell">
+                                    <i class="fas fa-bell"></i>
+                                    <span class="active_dot">
+                                        <img src="./images/notification-active.svg" alt="">
+                                    </span>
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                <a href="javascript:void(0)" class="dropdown-item">
+                                    <!-- Message Start -->
+                                    <div class="media">
+                                        <img src="./images/user1.jpg" alt="User Avatar"
+                                            class="img-size-50 me-3 img-circle">
+                                        <div class="media-body">
+                                            <h3 class="dropdown-item-title">
+                                                Brad Diesel
+                                                <span class="float-right text-sm text-danger"></span>
+                                            </h3>
+                                            <p class="text-sm">Call me whenever you can...</p>
+                                            <p class="text-sm text-muted"> 4 Hours Ago</p>
+                                        </div>
+                                    </div>
+                                    <!-- Message End -->
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a href="javascript:void(0)" class="dropdown-item">
+                                    <!-- Message Start -->
+                                    <div class="media">
+                                        <img src="./images/user2.jpg" alt="User Avatar"
+                                            class="img-size-50 img-circle me-3">
+                                        <div class="media-body">
+                                            <h3 class="dropdown-item-title">
+                                                John Pierce
+                                                <span class="float-right text-sm text-muted"></span>
+                                            </h3>
+                                            <p class="text-sm">I got your message bro</p>
+                                            <p class="text-sm text-muted"> 4 Hours Ago</p>
+                                        </div>
+                                    </div>
+                                    <!-- Message End -->
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a href="javascript:void(0)" class="dropdown-item">
+                                    <!-- Message Start -->
+                                    <div class="media">
+                                        <img src="./images/user3.jpg" alt="User Avatar"
+                                            class="img-size-50 img-circle me-3">
+                                        <div class="media-body">
+                                            <h3 class="dropdown-item-title">
+                                                Nora Silvester
+                                                <span class="float-right text-sm text-warning"></span>
+                                            </h3>
+                                            <p class="text-sm">The subject goes here</p>
+                                            <p class="text-sm text-muted"> 4 Hours Ago</p>
+                                        </div>
+                                    </div>
+                                    <!-- Message End -->
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a href="javascript:void(0)" class="dropdown-item dropdown-footer">See All Messages</a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item me-0">
+                        <div class="dropdown profile-box">
+                            <div class="user">
+                                <img src="./images/user.png" alt="">
+                            </div>
+                            <button class="btn dropdown-toggle profile-dropdown" type="button" id="dropdownMenuButton2"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Diane Ward
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton2">
+                                <li><a class="dropdown-item" href="javascript:void(0)">Profile</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="javascript:void(0)">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- /.navbar -->
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar" id="crm-sidebar" style="transition: margin-left .3s ease-in-out, width .3s ease-in-out;
+        width: 260px">
+            <div class="sidebar-content">
+                <div class="desktop-submenu">
+                    <nav class="menu open-current-submenu">
+                        <ul>
+                            <li class="menu-item sub-menu arrow-icon">
+                                <a href="javascript:void(0)" class="sd-l active">
+                                    <span class="dash-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12.047" height="14.206"
+                                            viewBox="0 0 19.047 20.206">
+                                            <g id="dashboard_icon" transform="translate(-104.664 -19.352)">
+                                                <path id="Path_6071" data-name="Path 6071"
+                                                    d="M111.659,19.6h-5.373a1.373,1.373,0,0,0-1.371,1.371v8.218a1.373,1.373,0,0,0,1.371,1.371h5.373a1.373,1.373,0,0,0,1.371-1.371V20.973a1.373,1.373,0,0,0-1.371-1.371Zm.736,9.59a.737.737,0,0,1-.736.736h-5.373a.737.737,0,0,1-.736-.736V20.973a.737.737,0,0,1,.736-.736h5.373a.737.737,0,0,1,.736.736Z"
+                                                    stroke-width="0.5" />
+                                                <path id="Path_6072" data-name="Path 6072"
+                                                    d="M111.659,359.31h-5.373a1.373,1.373,0,0,0-1.371,1.371v4.109a1.373,1.373,0,0,0,1.371,1.371h5.373a1.373,1.373,0,0,0,1.371-1.371v-4.109A1.373,1.373,0,0,0,111.659,359.31Zm.736,5.48a.737.737,0,0,1-.736.736h-5.373a.737.737,0,0,1-.736-.736v-4.109a.737.737,0,0,1,.736-.736h5.373a.737.737,0,0,1,.736.736Z"
+                                                    transform="translate(0 -326.854)" stroke-width="0.5" />
+                                                <path id="Path_6073" data-name="Path 6073"
+                                                    d="M387.329,250.71h-5.373a1.373,1.373,0,0,0-1.371,1.371V260.3a1.373,1.373,0,0,0,1.371,1.371h5.373A1.373,1.373,0,0,0,388.7,260.3v-8.218A1.373,1.373,0,0,0,387.329,250.71Zm.736,9.59a.737.737,0,0,1-.736.736h-5.373a.737.737,0,0,1-.736-.736v-8.218a.737.737,0,0,1,.736-.736h5.373a.737.737,0,0,1,.736.736Z"
+                                                    transform="translate(-265.239 -222.363)" stroke-width="0.5" />
+                                                <path id="Path_6074" data-name="Path 6074"
+                                                    d="M387.329,19.6h-5.373a1.373,1.373,0,0,0-1.371,1.371v4.109a1.373,1.373,0,0,0,1.371,1.371h5.373a1.373,1.373,0,0,0,1.371-1.371V20.973a1.373,1.373,0,0,0-1.371-1.371Zm.736,5.48a.737.737,0,0,1-.736.736h-5.373a.737.737,0,0,1-.736-.736V20.973a.737.737,0,0,1,.736-.736h5.373a.737.737,0,0,1,.736.736Z"
+                                                    transform="translate(-265.239)" stroke-width="0.5" />
+                                            </g>
+                                        </svg>
+                                    </span>
+                                    <span class="menu-title nm-tl-text">Dashboard</span>
+                                </a>
+                            </li>
+                            <li class="menu-item sub-menu arrow-icon">
+                                <a href="javascript:void(0)" class="sd-l">
+                                    <span class="log-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12.197" height="14.979"
+                                            viewBox="0 0 17.197 18.979">
+                                            <g id="noun-logout-3324829" transform="translate(-175.695 -87.505)">
+                                                <path id="Path_6086" data-name="Path 6086"
+                                                    d="M192.892,97.865a8.6,8.6,0,1,1-11.832-7.946.863.863,0,0,1,.647,1.6,6.872,6.872,0,1,0,5.18,0,.863.863,0,1,1,.647-1.6,8.547,8.547,0,0,1,5.357,7.947Zm-8.6-.561a.863.863,0,0,0,.863-.863V88.369a.863.863,0,1,0-1.727,0V96.44a.863.863,0,0,0,.863.863Z"
+                                                    transform="translate(0 0)" fill="#66707e" />
+                                            </g>
+                                        </svg>
+                                    </span>
+                                    <span class="menu-title nm-tl-text">Logout</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </aside>
+        <!-- Main Sidebar Container -->
+
+
+        <!-- Content Body -->
+        <div class="content-wrapper expand-cbody" id="contentBody" style="transition: margin-left .3s ease-in-out;
+        margin-left: 260px;">
+            <div class="table-wrap table-responsive">
+                <table class="table align-middle">
+                    <thead>
+                        <tr class="align-middle">
+                            <th>Name</th>
+                            <th>Industry</th>
+                            <th>Number</th>
+                            <th>Rating</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="align-middle">
+                            <td>
+                                <img src="./images/1.png" alt="" class="ad-pic">
+                                <span class="ad-nm">Rohit sharma</span>
+                            </td>
+                            <td>Healthcare</td>
+                            <td>98 2657 1223</td>
+                            <td>
+                                <img src="./images/orange-star.svg" class="orange-star" alt="">
+                                <img src="./images/orange-star.svg" class="orange-star" alt="">
+                                <img src="./images/orange-star.svg" class="orange-star" alt="">
+                                <img src="./images/orange-star.svg" class="orange-star" alt="">
+                                <img src="./images/grey-star.svg" class="grey-star" alt="">
+                            </td>
+                            <td>
+                                <a href="#!" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                        class="far fa-eye"></i></a>
+                            </td>
+                        </tr>
+                        <tr class="align-middle">
+                            <td>
+                                <img src="./images/2.png" alt="" class="ad-pic">
+                                <span class="ad-nm">Rohit sharma</span>
+                            </td>
+                            <td>Healthcare</td>
+                            <td>98 2657 1223</td>
+                            <td>
+                                <img src="./images/orange-star.svg" class="orange-star" alt="">
+                                <img src="./images/orange-star.svg" class="orange-star" alt="">
+                                <img src="./images/orange-star.svg" class="orange-star" alt="">
+                                <img src="./images/orange-star.svg" class="orange-star" alt="">
+                                <img src="./images/grey-star.svg" class="grey-star" alt="">
+                            </td>
+                            <td>
+                                <a href="#!" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                        class="far fa-eye"></i></a>
+                            </td>
+                        </tr>
+                        <tr class="align-middle">
+                            <td>
+                                <img src="./images/1.png" alt="" class="ad-pic">
+                                <span class="ad-nm">Rohit sharma</span>
+                            </td>
+                            <td>Healthcare</td>
+                            <td>98 2657 1223</td>
+                            <td>
+                                <img src="./images/orange-star.svg" class="orange-star" alt="">
+                                <img src="./images/orange-star.svg" class="orange-star" alt="">
+                                <img src="./images/orange-star.svg" class="orange-star" alt="">
+                                <img src="./images/orange-star.svg" class="orange-star" alt="">
+                                <img src="./images/grey-star.svg" class="grey-star" alt="">
+                            </td>
+                            <td>
+                                <a href="#!" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                        class="far fa-eye"></i></a>
+                            </td>
+                        </tr>
+                        <tr class="align-middle">
+                            <td>
+                                <img src="./images/2.png" alt="" class="ad-pic">
+                                <span class="ad-nm">Rohit sharma</span>
+                            </td>
+                            <td>Healthcare</td>
+                            <td>98 2657 1223</td>
+                            <td>
+                                <img src="./images/orange-star.svg" class="orange-star" alt="">
+                                <img src="./images/orange-star.svg" class="orange-star" alt="">
+                                <img src="./images/orange-star.svg" class="orange-star" alt="">
+                                <img src="./images/orange-star.svg" class="orange-star" alt="">
+                                <img src="./images/grey-star.svg" class="grey-star" alt="">
+                            </td>
+                            <td>
+                                <a href="#!" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                        class="far fa-eye"></i></a>
+                            </td>
+                        </tr>
+                        <tr class="align-middle">
+                            <td>
+                                <img src="./images/1.png" alt="" class="ad-pic">
+                                <span class="ad-nm">Rohit sharma</span>
+                            </td>
+                            <td>Healthcare</td>
+                            <td>98 2657 1223</td>
+                            <td>
+                                <img src="./images/orange-star.svg" class="orange-star" alt="">
+                                <img src="./images/orange-star.svg" class="orange-star" alt="">
+                                <img src="./images/orange-star.svg" class="orange-star" alt="">
+                                <img src="./images/orange-star.svg" class="orange-star" alt="">
+                                <img src="./images/grey-star.svg" class="grey-star" alt="">
+                            </td>
+                            <td>
+                                <a href="#!" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                        class="far fa-eye"></i></a>
+                            </td>
+                        </tr>
+                        <tr class="align-middle">
+                            <td>
+                                <img src="./images/2.png" alt="" class="ad-pic">
+                                <span class="ad-nm">Rohit sharma</span>
+                            </td>
+                            <td>Healthcare</td>
+                            <td>98 2657 1223</td>
+                            <td>
+                                <img src="./images/orange-star.svg" class="orange-star" alt="">
+                                <img src="./images/orange-star.svg" class="orange-star" alt="">
+                                <img src="./images/orange-star.svg" class="orange-star" alt="">
+                                <img src="./images/orange-star.svg" class="orange-star" alt="">
+                                <img src="./images/grey-star.svg" class="grey-star" alt="">
+                            </td>
+                            <td>
+                                <a href="#!" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                        class="far fa-eye"></i></a>
+                            </td>
+                        </tr>
+                        <tr class="align-middle">
+                            <td>
+                                <img src="./images/1.png" alt="" class="ad-pic">
+                                <span class="ad-nm">Rohit sharma</span>
+                            </td>
+                            <td>Healthcare</td>
+                            <td>98 2657 1223</td>
+                            <td>
+                                <img src="./images/orange-star.svg" class="orange-star" alt="">
+                                <img src="./images/orange-star.svg" class="orange-star" alt="">
+                                <img src="./images/orange-star.svg" class="orange-star" alt="">
+                                <img src="./images/orange-star.svg" class="orange-star" alt="">
+                                <img src="./images/grey-star.svg" class="grey-star" alt="">
+                            </td>
+                            <td>
+                                <a href="#!" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                        class="far fa-eye"></i></a>
+                            </td>
+                        </tr>
+                        <tr class="align-middle">
+                            <td>
+                                <img src="./images/2.png" alt="" class="ad-pic">
+                                <span class="ad-nm">Rohit sharma</span>
+                            </td>
+                            <td>Healthcare</td>
+                            <td>98 2657 1223</td>
+                            <td>
+                                <img src="./images/orange-star.svg" class="orange-star" alt="">
+                                <img src="./images/orange-star.svg" class="orange-star" alt="">
+                                <img src="./images/orange-star.svg" class="orange-star" alt="">
+                                <img src="./images/orange-star.svg" class="orange-star" alt="">
+                                <img src="./images/grey-star.svg" class="grey-star" alt="">
+                            </td>
+                            <td>
+                                <a href="#!" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                        class="far fa-eye"></i></a>
+                            </td>
+                        </tr>
+                        <tr class="align-middle">
+                            <td>
+                                <img src="./images/1.png" alt="" class="ad-pic">
+                                <span class="ad-nm">Rohit sharma</span>
+                            </td>
+                            <td>Healthcare</td>
+                            <td>98 2657 1223</td>
+                            <td>
+                                <img src="./images/orange-star.svg" class="orange-star" alt="">
+                                <img src="./images/orange-star.svg" class="orange-star" alt="">
+                                <img src="./images/orange-star.svg" class="orange-star" alt="">
+                                <img src="./images/orange-star.svg" class="orange-star" alt="">
+                                <img src="./images/grey-star.svg" class="grey-star" alt="">
+                            </td>
+                            <td>
+                                <a href="#!" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                        class="far fa-eye"></i></a>
+                            </td>
+                        </tr>
+                        <tr class="align-middle">
+                            <td>
+                                <img src="./images/2.png" alt="" class="ad-pic">
+                                <span class="ad-nm">Rohit sharma</span>
+                            </td>
+                            <td>Healthcare</td>
+                            <td>98 2657 1223</td>
+                            <td>
+                                <img src="./images/orange-star.svg" class="orange-star" alt="">
+                                <img src="./images/orange-star.svg" class="orange-star" alt="">
+                                <img src="./images/orange-star.svg" class="orange-star" alt="">
+                                <img src="./images/orange-star.svg" class="orange-star" alt="">
+                                <img src="./images/grey-star.svg" class="grey-star" alt="">
+                            </td>
+                            <td>
+                                <a href="#!" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                        class="far fa-eye"></i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- Content Body -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="row h-100">
+                            <div class="col-md-3">
+                                <div class="blue_strap">
+                                    <div class="profile_box">
+                                        <div class="profile-pic">
+                                            <img src="./images/profile-pic.png" alt="" id="imageProf">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <header>
+                                    <div class="logo-blk">
+                                        <div class="img">
+                                            <img src="./images/logo_ele.png" alt="">
+                                        </div>
+                                    </div>
+                                </header>
+                                <section class="comment-warpper">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="title_wrap">
+                                                <h1>
+                                                    <span class="titext">Happy Client</span>
+                                                </h1>
+                                                <h2>
+                                                    <span class="titext">Testimonials</span>
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-4">
+                                        <div class="col-md-12">
+                                            <div class="description_wrap">
+                                                <div class="qute-icn-l">
+                                                    <img src="./images/top-quote.png" alt="">
+                                                </div>
+                                                <div class="feedtext">
+                                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                                        Facilis,
+                                                        aliquam non reprehenderit at doloremque ipsum! Soluta nostrum
+                                                        laboriosam, quam consectetur natus, quis aperiam voluptatibus
+                                                        esse
+                                                        sunt blanditiis nulla pariatur, illum suscipit excepturi
+                                                        eligendi
+                                                        temporibus sint. Beatae impedit recusandae adipisci accusamus.
+                                                    </p>
+                                                </div>
+                                                <div class="qute-icn-r">
+                                                    <img src="./images/bottom_quote.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="user_info">
+                                                <h3>
+                                                    <span class="titext">Rahul Kumar</span>
+                                                </h3>
+                                                <div class="desig" style="display: block;">
+                                                    <span class="titext">Aiims Hospital Manager</span>
+                                                </div>
+                                                <ul class="star-icon-p">
+                                                    <li><button class="fas fa-star"></button></li>
+                                                    <li><button class="fas fa-star"></button></li>
+                                                    <li><button class="fas fa-star"></button></li>
+                                                    <li><button class="fas fa-star"></button></li>
+                                                    <li><button class="fas fa-star"></button></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="sign_upload">
+                                                <img src="./images/signature.png" id="imageSig" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="close-button" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="save-button">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <script src="./js/jquery3.7.0.js"></script>
+    <script src="./js/popper.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script async src="./js/sidebar-colapse.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    <link rel="icon" type="image/ico" sizes="32x32" href="./images/favicon/favicon.ico">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="row h-100">
+            <div class="col-lg-6 col-md-6">
+                <div class="form-warp">
+                    <div class="header-wrap">
+                        <img src="./images/logo_ele.png" alt="logo">
+                        <h2>Please login to your account</h2>
+                    </div>
+                    <form class="row needs-validation" novalidate>
+                        <div class="col-md-12">
+                            <input class="form-control" type="text" placeholder="Username" aria-label="Username">
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                            <div class="invalid-feedback">
+                                Please choose a username.
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="input-group">
+                                <input class="form-control" type="password" placeholder="Password" aria-label="Password"
+                                    id="password">
+                                <span class="input-group-text" id="basic-addon2"><i class="far fa-eye-slash"></i></span>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please choose a username.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-login">Log In</button>
+                        </div>
+                    </form>
+                    <p class="terms-text">Terms of use <a href="#!">privacy policy</a></p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 d-md-block d-none">
+                <div class="bg-img"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/jquery3.7.0.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script>
+        let visibleBtn = document.getElementById("basic-addon2"),
+            pass = document.getElementById("password");
+        visibleBtn.addEventListener("click", () => {
+            "password" === pass.attributes.type.textContent
+                ? (pass.setAttribute("type", "text"), visibleBtn.firstChild.classList.replace("fa-eye-slash", "fa-eye"))
+                : (pass.setAttribute("type", "password"), visibleBtn.firstChild.classList.replace("fa-eye", "fa-eye-slash"));
+        });
+    </script>
+</body>
+
+</html>

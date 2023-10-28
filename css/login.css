@@ -1,0 +1,171 @@
+@font-face {
+  font-family: "Poppins-Light";
+  src: url(../fonts/Poppins-Light.ttf);
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url(../fonts/Poppins-Regular.ttf);
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url(../fonts/Poppins-Medium.ttf);
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url(../fonts/Poppins-SemiBold.ttf);
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url(../fonts/Poppins-Bold.ttf);
+  font-display: fallback;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+*:focus-visible {
+  outline: 0;
+}
+
+body {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #000;
+  background-color: #fff;
+  font-family: "Poppins-Regular", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.wrapper {
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .wrapper {
+    height: auto;
+  }
+}
+.wrapper .form-warp {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 991px) {
+  .wrapper .form-warp {
+    padding: 50px;
+  }
+}
+.wrapper .form-warp .header-wrap {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.wrapper .form-warp .header-wrap img {
+  margin-bottom: 20px;
+  width: 200px;
+  height: auto;
+}
+.wrapper .form-warp .header-wrap h2 {
+  font-size: 18px;
+  color: #8B97A9;
+}
+.wrapper .form-warp form .input-group .form-control {
+  margin-bottom: 0;
+}
+.wrapper .form-warp form .input-group .input-group-text {
+  cursor: pointer;
+  color: #4D5563;
+  background-color: #ffffff;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 2px solid #DCDCDC;
+}
+.wrapper .form-warp form .form-control {
+  border: 0;
+  border-bottom: 2px solid #DCDCDC;
+  border-radius: 0;
+  height: 50px;
+}
+.wrapper .form-warp form .form-control:focus {
+  color: #000;
+  background-color: #fff;
+  border-color: #DCDCDC;
+  outline: 0;
+  box-shadow: none;
+}
+.wrapper .form-warp form .form-control::-moz-placeholder {
+  color: #4D5563;
+}
+.wrapper .form-warp form .form-control::placeholder {
+  color: #4D5563;
+}
+.wrapper .form-warp form .form-control:-moz-placeholder {
+  color: #4D5563;
+}
+.wrapper .form-warp form .form-control::-moz-placeholder {
+  color: #4D5563;
+}
+.wrapper .form-warp form .form-control:-ms-input-placeholder {
+  color: #4D5563;
+}
+.wrapper .form-warp form .form-control::-webkit-input-placeholder {
+  color: #4D5563;
+}
+.wrapper .form-warp form .btn-login {
+  background-color: #0a5d94;
+  color: #fff;
+  border-radius: 4px;
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+  font-size: 16px;
+}
+.wrapper .form-warp .terms-text {
+  position: absolute;
+  bottom: 0;
+  transform: translateX(-50%);
+  left: 50%;
+}
+.wrapper .form-warp .terms-text a {
+  color: #0a5d94;
+  text-decoration: underline;
+}
+.wrapper .form-warp .terms-text a:hover {
+  text-decoration: none;
+}
+.wrapper .bg-img {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/login-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -75px;
+}
+@media (max-width: 1399px) {
+  .wrapper .bg-img {
+    background-position: center;
+  }
+}
+@media (max-width: 767px) {
+  .wrapper .bg-img {
+    height: 600px;
+  }
+}/*# sourceMappingURL=login.css.map */
